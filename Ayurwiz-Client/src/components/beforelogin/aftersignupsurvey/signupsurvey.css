@@ -1,0 +1,44 @@
+.aboutyou {
+  color: #f0f0f0;
+  font-size: 96px;
+  margin: 0px 10%;
+}
+.questionlogo {
+  display: flex;
+  flex-direction: row;
+}
+.question {
+  flex: 1;
+  padding: 10px 30px;
+}
+.question input {
+  height: 10%;
+  min-height: 38px;
+  margin: 10px 0px;
+  width: calc(100% - 30px);
+  padding: 2px 15px;
+  border: black 2px solid;
+  border-radius: 15px;
+}
+.question button {
+  height: 10%;
+  min-height: 38px;
+  margin: 10px 0px;
+  background: transparent;
+  width: calc(100%);
+  padding: 2px 15px;
+  border: black 2px solid;
+  border-radius: 15px;
+}
+.question .css-b62m3t-container {
+  padding: 0px 15px;
+  border: black 2px solid;
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+.question .css-b62m3t-container div {
+  border: none;
+}
+.logo {
+  flex: 1;
+}

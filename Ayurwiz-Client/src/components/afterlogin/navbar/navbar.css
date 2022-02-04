@@ -1,0 +1,61 @@
+.Navbar{
+    z-index: 20;
+    width: 100%;
+    height: fit-content;
+}
+.Header {
+  display: flex;
+  padding: 0px 60px;
+  background: white;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.name{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.burger {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.burger span {
+  width: 32px;
+  padding-bottom: 8px;
+  border-bottom: 2px black solid;
+}
+.Menu {
+  position: absolute;
+  z-index: 4;
+  top: 10vh;
+  bottom: auto;
+  color: white;
+  height: 0vh;
+  width: 100%;
+  background-color: #43576c;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+.MenuActive {
+  top: auto;
+  bottom: 0;
+  height: 90vh;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.menuOptions{
+    flex-direction: column;
+    align-items: center;
+    padding: 20vh;
+}
+.menuOptions h1{
+    border-bottom: solid white 3px;
+    font-size: 36px;
+    width: fit-content;
+}
+.menuOptions p{
+    font-size: 26px;
+    padding-top: 6px;
+}

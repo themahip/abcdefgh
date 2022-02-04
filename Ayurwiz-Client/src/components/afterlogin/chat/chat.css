@@ -1,0 +1,40 @@
+.chatroom .Title {
+  left: 10%;
+  z-index: 1;
+  font-size: 96px;
+  position: fixed;
+  color: #f0f0f0;
+}
+.chatroom .chats {
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+  width: 70%;
+  z-index: 2;
+}
+.chatroom .textarea {
+    gap: 6px;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  position: absolute;
+  bottom: 8%;
+  top: auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.textarea textarea {
+  text-align: justify;
+  padding: 10px;
+  width: 90%;
+  border: 2px black solid;
+  resize: none;
+}
+.textarea button {
+    border: 2px solid black;
+  background-color: transparent;
+  width: 10%;
+}
