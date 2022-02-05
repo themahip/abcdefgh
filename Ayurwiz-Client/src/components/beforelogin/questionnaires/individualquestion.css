@@ -1,0 +1,47 @@
+.Questionpage {
+    display: flex;
+    flex-direction: column;
+}
+.Questionpage .header {
+  font-size: 96px;
+  color: #f0f0f0;
+}
+.Questionpage .questions {
+  padding: 0px 10%;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.indiquestion {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 2%;
+}
+.indiquestion .questiononly {
+  font-size: 22px;
+  padding-bottom: 2%;
+}
+.indiquestion .options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.options button {
+  font-size: 14px;
+  width: 20%;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 2px 15px;
+  border: 2px solid black;
+}
+.options button:hover {
+  color: white;
+  background-color: black;
+}
+.submitbtn {
+    align-self: center;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 20%;
+  margin: 0% 10%;
+}

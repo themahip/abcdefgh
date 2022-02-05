@@ -1,0 +1,22 @@
+.Dashboardpage{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.Dashboardpage .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+}
+.Dashboardpage .greeting{
+    font-size: 96px;
+}
+.Dashboardpage .welcome{
+    font-size: 72px;
+    font-weight: lighter;
+}
+.Dashboardpage .theme{
+    font-size: 52px;
+    font-style: italic;
+}
