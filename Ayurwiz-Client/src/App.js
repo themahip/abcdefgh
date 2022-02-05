@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import BreakOutRoom from "./components/afterlogin/chat/BreakoutroomPage";
 import Chat from "./components/afterlogin/chat/chat";
 import Questionarries from "./components/beforelogin/questionnaires/Questionarries";
+import Dailyquestion from "./components/afterlogin/dailyquestion/Dailyquestion";
+import Stats from "./components/afterlogin/stats/Stats";
 function App() {
   const [route, setRoute] = useState(window.location.pathname);
   useEffect(() => {
@@ -28,6 +30,10 @@ function App() {
         <Route path="/ayurwiz/dashboard" exact component={Dashboard} />
         <Route path="/ayurwiz/breakoutroom" exact component={BreakOutRoom} />
         <Route path="/ayurwiz/chat" exact component={Chat} />
+        <Route path="/ayurwiz/dailyquestions" exact component = {Dailyquestion}/>
+        <Route path = "/ayurwiz/stats" exact component={Stats}/>
+        ;
+        
         <Route path="/" exact component={Mainpage} />
       </Router>
     </div>

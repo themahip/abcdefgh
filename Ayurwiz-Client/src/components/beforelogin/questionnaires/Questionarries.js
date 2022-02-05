@@ -1,6 +1,7 @@
 import React from "react";
-import Individualquestion from "./individualquestion";
 import "./individualquestion.css";
+import { useState } from "react";
+import Report from "./Report";
 export default function () {
   const question = [
     {
@@ -39,22 +40,53 @@ export default function () {
       option4: "jaldksj kl",
     },
   ];
+  const [score, setScore] = useState(0);
+  let score1;
+  const [submitted, setSubmitted] = useState(false);
+  function submit() {
+    score1 = score;
+    console.log(score1)
+  }
+
   return (
     <div className="Questionpage">
       <h1 className="header">Questions</h1>
       <div className="questions">
-        {question.map((prop, id) => (
-          <Individualquestion
-            id={id + 1}
-            question={prop.question}
-            option1={prop.option1}
-            option2={prop.option2}
-            option3={prop.option3}
-            option4={prop.option4}
-          />
-        ))}
+        {question.map((prop, id) => {
+          let option = [prop.option1, prop.option2, prop.option3, prop.option4];
+          const [answer, setAnswer] = useState(0);
+          function classname(object) {
+            if (object === `option${answer}`) {
+              return "black";
+            } else {
+              return "normal";
+            }
+          }
+          return (
+            <div className="indiquestion">
+              <p className="questiononly">{prop.id + ". " + prop.question}</p>
+              <div className="options">
+                {option.map((opt, key) => (
+                  <button
+                    className={classname(`option${key + 1}`)}
+                    onClick={() => {
+                      setAnswer(key + 1);
+                      setScore((sc) => sc + key + 1);
+                    }}
+                  >
+                    {opt}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
-      <button className="submitbtn">Submit</button>
+      <button className="submitbtn" onClick={submit}>
+        Submit
+      </button>
+{/* 
+      <Report score={score1} /> */}
     </div>
   );
 }
