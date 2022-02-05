@@ -85,8 +85,7 @@ export default function () {
       <button className="submitbtn" onClick={submit}>
         Submit
       </button>
-{/* 
-      <Report score={score1} /> */}
+        {submitted?<Report/>:<div/>}
     </div>
   );
 }
